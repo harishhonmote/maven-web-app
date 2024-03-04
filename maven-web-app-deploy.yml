@@ -19,7 +19,6 @@ spec:
     containers:
     - name: mavenwebappcontainer
       image: harish721/mavenwebapp
-      imagePullPolicy: Always
       ports:
       - containerPort: 8080
 ---
@@ -34,5 +33,5 @@ spec:
   ports:
    - port: 80
      targetPort: 8080
-     nodePort: 30785
+     
 ...
